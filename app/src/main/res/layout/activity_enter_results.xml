@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/screen_background_03"
+    tools:context=".EnterResults"
+    tools:layout_editor_absoluteY="50dp">
+
+    <Button
+        android:id="@+id/button11"
+        android:layout_width="250dp"
+        android:layout_height="43dp"
+        android:background="@drawable/button_background_grey"
+        android:text="Liga Modus"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="67dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <Button
+        android:id="@+id/button12"
+        android:layout_width="125dp"
+        android:layout_height="43dp"
+        android:background="@drawable/button_background"
+        android:text="Speichern"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="130dp"
+        tools:layout_editor_absoluteY="475dp" />
+
+    <Button
+        android:id="@+id/button13"
+        android:layout_width="150dp"
+        android:layout_height="43dp"
+        android:background="@drawable/button_background"
+        android:text="Team A"
+        android:textStyle="bold"
+
+        tools:layout_editor_absoluteX="117dp"
+        tools:layout_editor_absoluteY="141dp" />
+
+    <Button
+        android:id="@+id/button15"
+        android:layout_width="150dp"
+        android:layout_height="43dp"
+        android:background="@drawable/button_background"
+        android:text="Team B"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="117dp"
+        tools:layout_editor_absoluteY="298dp" />
+
+    <Button
+        android:id="@+id/button16"
+        android:layout_width="50dp"
+        android:layout_height="43dp"
+        android:text="0"
+        tools:layout_editor_absoluteX="167dp"
+        tools:layout_editor_absoluteY="207dp" />
+
+    <Button
+        android:id="@+id/button17"
+        android:layout_width="50dp"
+        android:layout_height="43dp"
+        android:text="1"
+        tools:layout_editor_absoluteX="167dp"
+        tools:layout_editor_absoluteY="369dp" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floatingActionButton4"
+        android:layout_width="50dp"
+        android:layout_height="43dp"
+        android:clickable="true"
+        app:srcCompat="@android:drawable/btn_plus"
+        tools:layout_editor_absoluteX="103dp"
+        tools:layout_editor_absoluteY="207dp" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floatingActionButton5"
+        android:layout_width="50dp"
+        android:layout_height="43dp"
+        android:clickable="true"
+        app:srcCompat="@android:drawable/btn_plus"
+        tools:layout_editor_absoluteX="103dp"
+        tools:layout_editor_absoluteY="369dp" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floatingActionButton6"
+        android:layout_width="50dp"
+        android:layout_height="43dp"
+        android:clickable="true"
+        app:srcCompat="@android:drawable/btn_minus"
+        tools:layout_editor_absoluteX="231dp"
+        tools:layout_editor_absoluteY="207dp" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floatingActionButton7"
+        android:layout_width="50dp"
+        android:layout_height="43dp"
+        android:clickable="true"
+        app:srcCompat="@android:drawable/btn_minus"
+        tools:layout_editor_absoluteX="231dp"
+        tools:layout_editor_absoluteY="369dp" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">iLeague</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="hall_button">Hall Button</string>
+    <string name="weiter">WEITER</string>
+    <string name="neuer_button33">neuer Button33</string>
+    <string name="todo">TODO</string>
+    <string name="zum_starten_bitte_den_bildschirm_ber_hren">Zum starten bitte den Bildschirm berühren</string>
+    <string name="anleitung_hilfe">Anleitung/Hilfe</string>
+    <string name="title_activity_enter_names">EnterNames</string>
+    <string name="mit_plus_minus_teilnehmer_hinzuf_gen_oder_entfernen">Mit plus/minus Teilnehmer hinzufügen oder entfernen</string>
+    <string name="weiter1">Weiter</string>
+    <string name="name_2">Name 2</string>
+    <string name="spielename">Spielename...</string>
+    <string name="bitte_geben_sie_die_namen_der_teilnehmer_ein">Bitte geben Sie die Namen der Teilnehmer ein</string>
+</resources>

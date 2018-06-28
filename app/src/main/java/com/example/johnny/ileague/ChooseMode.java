@@ -30,6 +30,8 @@ public class ChooseMode extends AppCompatActivity {
                 Intent i = new Intent(getApplicationContext(),ModeLeague.class);
                 startActivity(i);
             }
+
+            //
         });
     }
 

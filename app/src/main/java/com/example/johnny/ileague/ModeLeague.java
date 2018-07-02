@@ -15,6 +15,119 @@ public class ModeLeague extends AppCompatActivity {
         setContentView(R.layout.activity_mode_league);
     }
 
+    //Spielplan erzeugen
+    static int spieltag = 1;
+
+    static String[][] heimGast = new String[liga.length / 2][2];
+
+    String[] liga =
+            {
+                    // Spieler einfügen
+            }
+
+    public static String[][] setSpieltag(int x, String[] teams) {
+
+        int n1, n2, h;
+
+        if (x <= 0) {
+
+            return null;
+
+        }
+
+        if (x >= teams.length)
+
+        {
+
+            return null;
+
+        } else {
+
+            n1 = teams.length;
+
+            n2 = n1 - 1;
+
+            h = 0;
+
+            for (int k = 1; k < n1 / 2 - 1; k++) {
+
+                heimGast[h][0] = teams[(x + k) % n2];
+
+                if (((x - k) % n2) < 0)
+
+                {
+
+                    heimGast[h][1] = teams[(n2 + (x - k)) % n2];
+
+                } else
+
+                {
+
+                    heimGast[h][1] = teams[(x - k) % n2];
+
+                }
+
+                h++;
+
+            }
+
+            heimGast[n1 / 2 - 1][0] = teams[x % n2];
+
+            heimGast[n1 / 2 - 1][1] = teams[n1 - 1];
+
+        }
+
+        if ((x % 2) == 0)
+
+        {
+
+            String help = new String();
+
+            for (int j = 0; j < heimGast.length; j++)
+
+            {
+
+                help = heimGast[j][0];
+
+                heimGast[j][0] = heimGast[j][1];
+
+                heimGast[j][1] = help;
+
+            }
+
+            return null;
+
+        } else {
+
+            return null;
+
+        }
+
+
+    }
+
+    public static String[][] erstelleSpielplan() {
+
+        String[][] plan = new String[liga.length -1][liga.length / 2];
+
+        for (int i = 1; i < liga.length; i++) {
+            setSpieltag(i, liga);
+            for (int l = 0; l < liga.length - 1; l++) {
+                for(int k = 0; k < liga.length/2; k++){
+                    plan[l][k] = heimGast[k][0] + " gg. " + heimGast[k][k];
+                }
+            }
+        }
+        return plan;
+    }
+
+    static String [][] spielplan = new String[liga.length-1][liga.length/2];
+    spielplan.erstelleSpielplan();
+    //Beim Ergebniseitragen neue Partei initializieren
+    bootom8.addView(spielplan[i][j]);
+
+
+    //Tabelle erzeugen
     TableLayout t1 = (TableLayout) findViewById(R.id.main_table);
 
     TableRow tr_head = new TableRow(this);
@@ -75,7 +188,7 @@ public class ModeLeague extends AppCompatActivity {
 
     
     Integer count=0;
- for(int i=0 ; spielerlist[i]=null ; i++) {
+ for(int i=0 ; liga[i]=null ; i++) {
        String spieler;
        int sieg;
        int unentschieden;

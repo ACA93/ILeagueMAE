@@ -5,102 +5,75 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/screen_background_03"
-    tools:context=".ChooseMode"
-    tools:layout_editor_absoluteY="50dp">
+    tools:context=".OptionsActivity">
 
     <Button
-        android:id="@+id/buttoninfo88"
+        android:id="@+id/button18"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginBottom="56dp"
+        android:layout_marginBottom="116dp"
         android:layout_marginEnd="67dp"
         android:layout_marginLeft="67dp"
         android:layout_marginRight="67dp"
         android:layout_marginStart="67dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="29dp"
         android:background="@drawable/button_background_grey"
         android:text="Bitte wählen Sie eine Sportart aus!"
         android:textColor="@color/white"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/Button_Liga"
+        app:layout_constraintBottom_toTopOf="@+id/checkBoxSound"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/Button_Fussball"
+    <CheckBox
+        android:id="@+id/checkBoxSound"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginBottom="46dp"
+        android:layout_marginBottom="35dp"
         android:layout_marginEnd="67dp"
         android:layout_marginLeft="67dp"
         android:layout_marginRight="67dp"
         android:layout_marginStart="67dp"
         android:background="@drawable/button_background"
-        android:checked="true"
-        android:duplicateParentState="false"
-        android:text="Liga / Gruppe"
+        android:text="SOUND"
         android:textAlignment="center"
-        android:textColor="@color/white"
-        android:textStyle="bold"
-        android:visibility="visible"
-        app:layout_constraintBottom_toTopOf="@+id/button5"
+        app:layout_constraintBottom_toTopOf="@+id/checkBox2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Button_Liga" />
+        app:layout_constraintTop_toBottomOf="@+id/button18" />
 
-    <Button
-        android:id="@+id/Button_Liga"
+    <CheckBox
+        android:id="@+id/checkBox2"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginBottom="32dp"
+        android:layout_marginBottom="33dp"
         android:layout_marginEnd="67dp"
         android:layout_marginLeft="67dp"
         android:layout_marginRight="67dp"
         android:layout_marginStart="67dp"
         android:background="@drawable/button_background"
-        android:text="Liga"
+        android:text="Vibration"
         android:textAlignment="center"
-        android:textColor="@color/white"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/Button_Fussball"
+        app:layout_constraintBottom_toTopOf="@+id/buttonLanguage"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttoninfo88" />
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxSound" />
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/buttonLanguage"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginBottom="67dp"
+        android:layout_marginBottom="89dp"
         android:layout_marginEnd="67dp"
         android:layout_marginLeft="67dp"
         android:layout_marginRight="67dp"
         android:layout_marginStart="67dp"
-        android:background="@drawable/button_background"
-        android:text="Gruppe + KO"
+        android:background="@drawable/button_background_grey"
+        android:text="Sprache"
         android:textAlignment="center"
-        android:textColor="@color/white"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/button6"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Button_Fussball" />
-
-    <Button
-        android:id="@+id/button6"
-        android:layout_width="125dp"
-        android:layout_height="0dp"
-        android:layout_marginBottom="25dp"
-
-        android:text="Weiter"
-        android:textColor="@color/white"
-        android:textStyle="bold"
-        android:background="@drawable/button_background"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button5" />
-
+        app:layout_constraintTop_toBottomOf="@+id/checkBox2" />
 </android.support.constraint.ConstraintLayout>

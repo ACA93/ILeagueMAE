@@ -20,7 +20,7 @@ public class ModeLeague extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mode_league);
 
-        button=(android.widget.Button)findViewById(R.id.Button_Liga);
+        button=(android.widget.Button)findViewById(R.id.button7);
         button.setOnClickListener(new android.view.View.OnClickListener() {
 
             @Override

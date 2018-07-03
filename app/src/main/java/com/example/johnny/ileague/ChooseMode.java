@@ -21,8 +21,9 @@ public class ChooseMode extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_choose_mode);
 
-         button=(Button)findViewById(R.id.Button_Liga);
-         button.setOnClickListener(new android.view.View.OnClickListener() {
+
+        button=(android.widget.Button)findViewById(R.id.button5);
+        button.setOnClickListener(new android.view.View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
@@ -30,8 +31,8 @@ public class ChooseMode extends AppCompatActivity {
                 Intent i = new Intent(getApplicationContext(),ModeLeague.class);
                 startActivity(i);
             }
-            
         });
+
     }
 
 

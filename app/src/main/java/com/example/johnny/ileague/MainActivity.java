@@ -15,6 +15,8 @@ public class MainActivity extends AppCompatActivity {
     private TextView mTextMessage;
     DatabaseHelper myDb;
 
+
+
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
             = new BottomNavigationView.OnNavigationItemSelectedListener() {
 

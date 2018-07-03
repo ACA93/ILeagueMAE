@@ -10,97 +10,144 @@
 
     <Button
         android:id="@+id/button11"
-        android:layout_width="250dp"
-        android:layout_height="43dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="82dp"
+        android:layout_marginEnd="67dp"
+        android:layout_marginLeft="67dp"
+        android:layout_marginRight="67dp"
+        android:layout_marginStart="67dp"
+        android:layout_marginTop="16dp"
         android:background="@drawable/button_background_grey"
         android:text="Liga Modus"
         android:textColor="@color/white"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="67dp"
-        tools:layout_editor_absoluteY="16dp" />
+        app:layout_constraintBottom_toTopOf="@+id/button13"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/button12"
         android:layout_width="125dp"
-        android:layout_height="43dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="24dp"
         android:background="@drawable/button_background"
         android:text="Speichern"
         android:textColor="@color/white"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="130dp"
-        tools:layout_editor_absoluteY="475dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button17" />
 
     <Button
         android:id="@+id/button13"
         android:layout_width="150dp"
-        android:layout_height="43dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="23dp"
         android:background="@drawable/button_background"
         android:text="Team A"
-        android:textStyle="bold"
 
-        tools:layout_editor_absoluteX="117dp"
-        tools:layout_editor_absoluteY="141dp" />
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/floatingActionButton6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button11" />
 
     <Button
         android:id="@+id/button15"
         android:layout_width="150dp"
-        android:layout_height="43dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="28dp"
         android:background="@drawable/button_background"
         android:text="Team B"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="117dp"
-        tools:layout_editor_absoluteY="298dp" />
+        app:layout_constraintBottom_toTopOf="@+id/floatingActionButton7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button16" />
 
     <Button
         android:id="@+id/button16"
-        android:layout_width="50dp"
-        android:layout_height="43dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="48dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginRight="14dp"
         android:text="0"
-        tools:layout_editor_absoluteX="167dp"
-        tools:layout_editor_absoluteY="207dp" />
+        app:layout_constraintBottom_toTopOf="@+id/button15"
+        app:layout_constraintEnd_toStartOf="@+id/floatingActionButton6"
+        app:layout_constraintStart_toEndOf="@+id/floatingActionButton4"
+        app:layout_constraintTop_toBottomOf="@+id/floatingActionButton6" />
 
     <Button
         android:id="@+id/button17"
-        android:layout_width="50dp"
-        android:layout_height="43dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="63dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginRight="14dp"
         android:text="1"
-        tools:layout_editor_absoluteX="167dp"
-        tools:layout_editor_absoluteY="369dp" />
+        app:layout_constraintBottom_toTopOf="@+id/button12"
+        app:layout_constraintEnd_toStartOf="@+id/floatingActionButton7"
+        app:layout_constraintStart_toEndOf="@+id/floatingActionButton5"
+        app:layout_constraintTop_toBottomOf="@+id/floatingActionButton7" />
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/floatingActionButton4"
-        android:layout_width="50dp"
-        android:layout_height="43dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginLeft="103dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginStart="103dp"
         android:clickable="true"
-        app:srcCompat="@android:drawable/btn_plus"
-        tools:layout_editor_absoluteX="103dp"
-        tools:layout_editor_absoluteY="207dp" />
+        app:layout_constraintBottom_toBottomOf="@+id/button16"
+        app:layout_constraintEnd_toStartOf="@+id/button16"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/button16"
+        app:srcCompat="@android:drawable/btn_plus" />
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/floatingActionButton5"
-        android:layout_width="50dp"
-        android:layout_height="43dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginLeft="103dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginStart="103dp"
         android:clickable="true"
-        app:srcCompat="@android:drawable/btn_plus"
-        tools:layout_editor_absoluteX="103dp"
-        tools:layout_editor_absoluteY="369dp" />
+        app:layout_constraintBottom_toBottomOf="@+id/button17"
+        app:layout_constraintEnd_toStartOf="@+id/button17"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/button17"
+        app:srcCompat="@android:drawable/btn_plus" />
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/floatingActionButton6"
-        android:layout_width="50dp"
-        android:layout_height="43dp"
+        android:layout_width="0dp"
+        android:layout_height="29dp"
+        android:layout_marginEnd="103dp"
+        android:layout_marginRight="103dp"
         android:clickable="true"
-        app:srcCompat="@android:drawable/btn_minus"
-        tools:layout_editor_absoluteX="231dp"
-        tools:layout_editor_absoluteY="207dp" />
+        app:layout_constraintBottom_toTopOf="@+id/button16"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button16"
+        app:layout_constraintTop_toBottomOf="@+id/button13"
+        app:srcCompat="@android:drawable/btn_minus" />
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/floatingActionButton7"
-        android:layout_width="50dp"
-        android:layout_height="43dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="103dp"
+        android:layout_marginRight="103dp"
         android:clickable="true"
-        app:srcCompat="@android:drawable/btn_minus"
-        tools:layout_editor_absoluteX="231dp"
-        tools:layout_editor_absoluteY="369dp" />
+        app:layout_constraintBottom_toTopOf="@+id/button17"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button17"
+        app:layout_constraintTop_toBottomOf="@+id/button15"
+        app:srcCompat="@android:drawable/btn_minus" />
 
 </android.support.constraint.ConstraintLayout>

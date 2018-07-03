@@ -23,13 +23,13 @@
         android:text="Bitte wählen Sie eine Sportart aus!"
         android:textColor="@color/white"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/checkBox"
+        app:layout_constraintBottom_toTopOf="@+id/Button_Fussball"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/checkBox"
+        android:id="@+id/Button_Fussball"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginBottom="30dp"
@@ -45,13 +45,13 @@
         android:textColor="@color/white"
         android:textStyle="bold"
         android:visibility="visible"
-        app:layout_constraintBottom_toTopOf="@+id/checkBox2"
+        app:layout_constraintBottom_toTopOf="@+id/Button_Liga"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buttoninfo88" />
 
     <Button
-        android:id="@+id/checkBox2"
+        android:id="@+id/Button_Liga"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginBottom="30dp"
@@ -67,7 +67,7 @@
         app:layout_constraintBottom_toTopOf="@+id/button5"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox" />
+        app:layout_constraintTop_toBottomOf="@+id/Button_Fussball" />
 
     <Button
         android:id="@+id/button5"
@@ -85,7 +85,7 @@
         app:layout_constraintBottom_toTopOf="@+id/button6"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox2" />
+        app:layout_constraintTop_toBottomOf="@+id/Button_Liga" />
 
     <Button
         android:id="@+id/button6"

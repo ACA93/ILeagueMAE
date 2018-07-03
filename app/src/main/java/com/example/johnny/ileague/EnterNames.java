@@ -6,8 +6,12 @@ import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
+import android.widget.Button;
+import android.content.Intent;
 
 public class EnterNames extends AppCompatActivity {
+
+    Button button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +28,18 @@ public class EnterNames extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
+
+         button=(Button)findViewById(R.id.button6);
+         button.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                // TODO Auto-generated method stub
+                android.content.Intent i = new Intent(getApplicationContext(),ChooseSport.class);
+                startActivity(i);
+            }
+        });
+
     }
 
 }

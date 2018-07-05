@@ -26,9 +26,7 @@
             android:label="@string/title_activity_enter_names"
             android:theme="@style/Theme" />
         <activity android:name=".ModeLeague" />
-        <activity android:name=".EnterResults" />
-        <activity android:name=".OptionsActivity" />
-        <activity android:name=".Manual"></activity>
+        <activity android:name=".EnterResults"></activity>
     </application>
 
 </manifest>
